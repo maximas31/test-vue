@@ -20,7 +20,7 @@ export const Feedefy = {
 
     const script = document.createElement("script");
 
-    script.setAttribute("src", `https://app.fedeefy.com/widget.js?id=${id}`);
+    script.setAttribute("src", `https://app.feedefy.com/widget.js?id=${id}`);
 
     script.defer = true;
 
