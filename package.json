@@ -1,6 +1,6 @@
 {
   "name": "@feedefy/vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Embed the Feedefy widget in your Vue App",
   "main": "index.js",
   "scripts": {
