@@ -5,20 +5,22 @@ export const Feedefy = {
   },
 
   mounted() {
+    let id;
+  
     if (this.$props) { // For Vue 2
-      projectId = this.$props.projectId;
+      id = this.$props.projectId;
     } else if (this.props) { // For Vue 3
-      projectId = this.props.projectId;
+      id = this.props.projectId;
     }
 
-    if (!projectId) {
+    if (!id) {
       console.error("No projectId was passed to Feedefy Vue, widget will not be initialized");
       return;
     }
 
     const script = document.createElement("script");
 
-    script.setAttribute("src", `https://app.fedeefy.com/widget.js?id=${projectId}`);
+    script.setAttribute("src", `https://app.fedeefy.com/widget.js?id=${id}`);
 
     script.defer = true;
 
