@@ -1,0 +1,14 @@
+{
+  "name": "@feedefy/vue",
+  "version": "1.0.0",
+  "description": "Embed the Feedefy widget in your Vue App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "peerDependencies": {
+    "vue": "^2.0.0 || ^3.0.0"
+  }
+}
