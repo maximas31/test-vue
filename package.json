@@ -1,11 +1,19 @@
 {
   "name": "@feedefy/vue",
-  "version": "1.0.6",
+  "type": "module",
+  "version": "1.0.7",
   "description": "Embed the Feedefy widget in your Vue App",
+  "author": "feedefy",
+  "license": "MIT",
   "source": "src/index.ts",
-  "main": "dist/feedefy.js",
-  "module": "dist/feedefy.module.js",
-  "unpkg": "dist/feedefy.umd.js",
+  "module": "dist/feedefy.js",
+  "main": "dist/feedefy.cjs",
+  "umd:main": "dist/feedefy.umd.js",
+  "exports": {
+    "types": "./dist/feedefy.d.ts",
+    "require": "./dist/feedefy.js",
+    "default": "./dist/feedefy.modern.js"
+  },
   "simple-git-hooks": {
     "pre-commit": "npx pretty-quick --staged"
   },
@@ -14,8 +22,6 @@
     "build": "microbundle",
     "dev": "microbundle watch"
   },
-  "author": "",
-  "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
     "vue": "^2.0.0 || ^3.0.0"
