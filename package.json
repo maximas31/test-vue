@@ -6,13 +6,13 @@
   "author": "feedefy",
   "license": "MIT",
   "source": "src/index.ts",
-  "main": "dist/feedefy.cjs",
-  "module": "dist/feedefy.js",
-  "unpkg": "dist/feedefy.umd.js",
+  "main": "dist/index.cjs",
+  "module": "dist/index.module.js",
+  "unpkg": "dist/index.umd.js",
   "exports": {
     "types": "./dist/index.d.ts",
-    "require": "./dist/feedefy.cjs",
-    "default": "./dist/feedefy.modern.js"
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
   },
   "simple-git-hooks": {
     "pre-commit": "npx pretty-quick --staged"
