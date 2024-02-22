@@ -1,15 +1,19 @@
 export const Feedefy = {
   props: {
-    projectId: String,
-    required: true,
+    projectId: {
+      type: String,
+      required: true
+    }
   },
 
   mounted() {
-    let id = '';
-  
-    if (this.$props) { // For Vue 2
+    let id = "";
+
+    if (this.$props) {
+      // For Vue 2
       id = this.$props.projectId;
-    } else if (this.props) { // For Vue 3
+    } else if (this.props) {
+      // For Vue 3
       id = this.props.projectId;
     }
 
