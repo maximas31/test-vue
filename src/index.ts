@@ -6,6 +6,10 @@ export const Feedefy = {
     }
   },
 
+  data() {
+    return { script: undefined };
+  },
+
   mounted() {
     let id = "";
 
@@ -22,13 +26,19 @@ export const Feedefy = {
       return;
     }
 
-    const script = document.createElement("script");
+    this.script = document.createElement("script");
 
-    script.setAttribute("src", `https://app.feedefy.com/widget.js?id=${id}`);
+    this.script.setAttribute("src", `https://app.feedefy.com/widget.js?id=${id}`);
 
-    script.defer = true;
+    this.script.defer = true;
 
-    document.head.appendChild(script);
+    this.script.addEventListener("error", () => this.script.remove());
+
+    document.head.appendChild(this.script);
+  },
+
+  beforeUnmount() {
+    this.script.remove();
   },
 
   render() {
