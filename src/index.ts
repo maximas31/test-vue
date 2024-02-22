@@ -5,7 +5,7 @@ export const Feedefy = {
   },
 
   mounted() {
-    let id;
+    let id = '';
   
     if (this.$props) { // For Vue 2
       id = this.$props.projectId;
