@@ -1,13 +1,13 @@
 {
   "name": "@feedefy/vue",
-  "version": "1.0.3",
+  "version": "1.0.6",
   "description": "Embed the Feedefy widget in your Vue App",
   "source": "src/index.ts",
   "main": "dist/feedefy.js",
   "module": "dist/feedefy.module.js",
   "unpkg": "dist/feedefy.umd.js",
   "simple-git-hooks": {
-    "pre-commit": "pretty-quick --staged"
+    "pre-commit": "npx pretty-quick --staged"
   },
   "scripts": {
     "prepare": "npm run build",
