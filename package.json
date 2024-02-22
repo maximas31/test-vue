@@ -7,12 +7,13 @@
   "license": "MIT",
   "source": "src/index.ts",
   "main": "dist/index.cjs",
-  "module": "dist/index.module.js",
+  "module": "dist/index.js",
   "unpkg": "dist/index.umd.js",
+  "types": "./dist/index.d.ts",
   "exports": {
     "types": "./dist/index.d.ts",
     "require": "./dist/index.cjs",
-    "default": "./dist/index.modern.js"
+    "default": "./dist/index.js"
   },
   "simple-git-hooks": {
     "pre-commit": "npx pretty-quick --staged"
