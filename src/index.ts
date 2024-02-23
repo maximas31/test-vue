@@ -27,14 +27,11 @@ export const Feedefy = {
     }
 
     this.script = document.createElement("script");
-
-    this.script.setAttribute("src", `https://app.feedefy.com/widget.js?id=${id}`);
-
+    this.script.setAttribute("src", `https://app.feedefy.com/embed.js?id=${id}`);
     this.script.defer = true;
-
     this.script.addEventListener("error", () => this.script.remove());
 
-    document.head.appendChild(this.script);
+    document.body.appendChild(this.script);
   },
 
   beforeUnmount() {
