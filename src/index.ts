@@ -11,6 +11,12 @@ export const Feedefy = {
   },
 
   mounted() {
+    const existingScript = document.querySelector(`script[src*="https://app.feedefy.com"]`);
+
+    if (existingScript) {
+      return;
+    }
+
     let id = "";
 
     if (this.$props) {
